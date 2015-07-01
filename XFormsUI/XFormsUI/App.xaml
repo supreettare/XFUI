@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFormsUI.App">
+  <Application.Resources>
+    <ResourceDictionary>
+      <!--<Style x:Key="ListViewContainerGridStyle" TargetType="Grid">
+        <Setter Property="Padding" Value="10, 0, 5, 15" />
+        <Setter Property="RowSpacing" Value="3" />
+      </Style>-->
+    </ResourceDictionary>    
+  </Application.Resources>
+</Application>
