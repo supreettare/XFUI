@@ -37,6 +37,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\BoolResources.cs" />
+    <Compile Include="Classes\DoubleResources.cs" />
+    <Compile Include="Classes\ImagePathResources.cs" />
     <Compile Include="Flaty.xaml.cs">
       <DependentUpon>Flaty.xaml</DependentUpon>
     </Compile>
@@ -76,6 +79,9 @@
   <ItemGroup>
     <Content Include="Resources\Flaty\rainBus.jpg" />
     <Content Include="Resources\Flaty\rainDrops.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Converters\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

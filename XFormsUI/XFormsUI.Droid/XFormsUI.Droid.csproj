@@ -92,12 +92,15 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\drawable\Flaty\fblogin.png" />
-    <Content Include="Resources\drawable\Flaty\iconEmail.png" />
-    <Content Include="Resources\drawable\Flaty\iconPassword.png" />
-    <Content Include="Resources\drawable\Flaty\iconUsername.png" />
-    <Content Include="Resources\drawable\Flaty\rainBus.jpg" />
+    <AndroidResource Include="Resources\drawable\rainBus.jpg" />
+    <AndroidResource Include="Resources\drawable\fblogin.png" />
+    <AndroidResource Include="Resources\drawable\iconEmail.png" />
+    <AndroidResource Include="Resources\drawable\iconPassword.png" />
+    <AndroidResource Include="Resources\drawable\iconUsername.png" />
     <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\drawable\entry_border.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XFormsUI\XFormsUI.csproj">

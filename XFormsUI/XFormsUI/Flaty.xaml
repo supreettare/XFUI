@@ -2,13 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XFormsUI.Flaty"
-             xmlns:local="clr-namespace:XFormsUI;assembly=XFormsUI"
-             BackgroundImage="Flaty/rainBus320.jpg">
+             xmlns:local="clr-namespace:XFormsUI;assembly=XFormsUI"            
+             xmlns:Common="clr-namespace:XFormsUI.Classes;assembly=XFormsUI"
+             BackgroundImage="{x:Static Common:ImagePathResources.BackgroundImagePath}">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+     
+    </ResourceDictionary>
+  </ContentPage.Resources>
   <ScrollView>
-    <Grid Padding="20, 50, 20, 20" RowSpacing="25">
+    <Grid Padding="20, 30, 20, 20" RowSpacing="20">
       <Grid.RowDefinitions>
         <RowDefinition Height="Auto" />
-        <RowDefinition Height="40" />
+        <RowDefinition Height="20" />
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
@@ -25,29 +31,52 @@
         </Label.FontFamily>
       </Label>
 
-      <StackLayout Orientation="Horizontal" Grid.Row="2" HorizontalOptions="Fill" Padding="5">
-        <Image Source="Flaty/iconUsername.png" HeightRequest="30" VerticalOptions="Start"/>
-        <Entry Placeholder="Username" BackgroundColor="Transparent" HorizontalOptions="Fill" TextColor="White"/>
-      </StackLayout>
-
+      <Grid Grid.Row="2" HorizontalOptions="Fill" Padding="5">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="iconUsername.png" HeightRequest="30" VerticalOptions="Center" Grid.Row="0" Grid.Column="0"/>
+        <Entry Placeholder="Username" BackgroundColor="Transparent" HorizontalOptions="Fill" TextColor="White" Grid.Row="0" Grid.Column="1"/>
+      </Grid>
       <BoxView HeightRequest="1" Grid.Row="2" HorizontalOptions="Fill" BackgroundColor="White" VerticalOptions="End"/>
 
-      <StackLayout Orientation="Horizontal" Grid.Row="3" HorizontalOptions="Fill" Padding="5">
-        <Image Source="Flaty/iconEmail.png" HeightRequest="30" VerticalOptions="Start"/>
-        <Entry Placeholder="Email Address" BackgroundColor="Transparent" HorizontalOptions="Fill" TextColor="White"/>
-      </StackLayout>
+      <Grid Grid.Row="3" HorizontalOptions="Fill" Padding="5">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="iconEmail.png" HeightRequest="30" VerticalOptions="Center" Grid.Row="0" Grid.Column="0"/>
+        <Entry Placeholder="Email Address" BackgroundColor="Transparent" HorizontalOptions="Fill" TextColor="White" Grid.Row="0" Grid.Column="1"/>
+      </Grid>
       <BoxView HeightRequest="1" Grid.Row="3" HorizontalOptions="Fill" BackgroundColor="White" VerticalOptions="End"/>
 
-      <StackLayout Orientation="Horizontal" Grid.Row="4" HorizontalOptions="Fill" Padding="5">
-        <Image Source="Flaty/iconPassword.png" HeightRequest="30" VerticalOptions="Start"/>
-        <Entry Placeholder="Password" BackgroundColor="Transparent" HorizontalOptions="Fill" TextColor="White"/>
-      </StackLayout>
+      <Grid Grid.Row="4" HorizontalOptions="Fill" Padding="5">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="iconPassword.png" HeightRequest="30" VerticalOptions="Center" />
+        <Entry Placeholder="Password" BackgroundColor="Transparent" HorizontalOptions="Fill" TextColor="White" Grid.Row="0" Grid.Column="1"/>
+      </Grid>
       <BoxView HeightRequest="1" Grid.Row="4" HorizontalOptions="Fill" BackgroundColor="White" VerticalOptions="End"/>
 
-      <StackLayout Grid.Row="5" Spacing="12" HorizontalOptions="Fill" >
+      <StackLayout Grid.Row="5" Spacing="12" HorizontalOptions="Fill" Padding="{x:Static Common:DoubleResources.ButtonGroupPadding}">
         <Button Text="Sign Up" BackgroundColor="#1FBED6" HorizontalOptions="Fill" HeightRequest="40" TextColor="White"/>
 
-        <Image Source="Flaty/fblogin.png" HorizontalOptions="Fill" HeightRequest="50" />
+        <Image Source="fblogin.png" HorizontalOptions="Fill" HeightRequest="50" />
 
         <StackLayout Spacing="5">
           <Label Text="Or click here to sign up using your email address"  HorizontalOptions="Center" TextColor="White" FontSize="12"/>

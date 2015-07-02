@@ -31,6 +31,10 @@ namespace XFormsUI.Droid.CustomRenderer
             var nativeEditTextField = (Android.Widget.EditText)this.Control;          
             
             nativeEditTextField.SetHintTextColor(Android.Graphics.Color.White);
+
+            const int ID = Resource.Drawable.entry_border;
+            var drawable = this.Context.Resources.GetDrawable(ID);
+            nativeEditTextField.SetBackgroundDrawable(drawable);
         }
     }
 }

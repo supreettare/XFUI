@@ -150,22 +150,22 @@
     <BundleResource Include="Resources\Flaty\rainDrops.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Flaty\rainBus320.jpg" />
+    <BundleResource Include="Resources\rainBus320.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Flaty\rainDrops320.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Flaty\iconPassword.png" />
+    <BundleResource Include="Resources\iconPassword.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Flaty\iconEmail.png" />
+    <BundleResource Include="Resources\iconEmail.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Flaty\iconUsername.png" />
+    <BundleResource Include="Resources\iconUsername.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Flaty\fblogin.png" />
+    <BundleResource Include="Resources\fblogin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
