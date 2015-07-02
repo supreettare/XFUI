@@ -94,6 +94,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomRenderer\CustomEntryRenderer.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -123,6 +124,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fblogin.png" />
+    <Content Include="iconEmail.png" />
+    <Content Include="iconPassword.png" />
+    <Content Include="iconUsername.png" />
+    <Content Include="rainBus.jpg" />
     <Content Include="README_FIRST.txt" />
     <Content Include="SplashScreenImage.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
