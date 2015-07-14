@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFormsUI.CustomControls.FoodyItem">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="150"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+
+    <Image x:Name="imgFoodItem" Source="{Binding ImageURL}" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Row="0" Grid.RowSpan="3"/>
+  </Grid>
+</ViewCell>

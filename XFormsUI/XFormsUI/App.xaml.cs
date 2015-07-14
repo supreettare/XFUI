@@ -13,7 +13,7 @@ namespace XFormsUI
         public App()
         {
             InitializeComponent();
-            this.MainPage = new Flaty();
+            this.MainPage = new Foody();
         }
 
         protected override void OnStart()

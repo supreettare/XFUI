@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFormsUI.Foody"
+              xmlns:controls="clr-namespace:XFormsUI.CustomControls;assembly=XFormsUI">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <ListView x:Name="listRecipies"
+                    HasUnevenRows="True" Grid.Row="0" SeparatorVisibility="None">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+              </Grid.RowDefinitions>
+              <Image x:Name="imgFoodItem" Source="{Binding ImageURL}" Grid.Row="0" Grid.RowSpan="3" HorizontalOptions="Fill" VerticalOptions="Fill" HeightRequest="130" Aspect="AspectFill"/>
+              <BoxView Grid.Row="1" BackgroundColor="Black" Opacity="0.4" HorizontalOptions="Fill" Grid.RowSpan="2" VerticalOptions="Fill"/>
+              <StackLayout Grid.Row="1" Padding="10, 5, 10, 0">
+                <Label Text="{Binding Title}" TextColor="White" FontSize="Medium" Grid.Row="1" HorizontalOptions="Start"/>
+              </StackLayout>
+
+              <StackLayout Grid.Row="2" Padding="10, -5, 10, 5">
+                <Label Text="{Binding SubTitle}" TextColor="White" FontSize="Small" HorizontalOptions="Start"/>
+              </StackLayout>
+
+            </Grid>
+
+            <!--Context Actions for Active Journey-->
+            <ViewCell.ContextActions>
+              <MenuItem Clicked="OnShowClick"
+                Text="Show"/>
+              <MenuItem Clicked="OnFavClick"
+                 Text="Favorite" IsDestructive="True" />
+            </ViewCell.ContextActions>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </Grid>
+</ContentPage>
