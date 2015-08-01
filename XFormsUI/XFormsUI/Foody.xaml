@@ -7,7 +7,7 @@
     <Grid.RowDefinitions>
       <RowDefinition Height="*"/>
     </Grid.RowDefinitions>
-    <ListView x:Name="listRecipies"
+    <controls:CustomList x:Name="listRecipies"
                     HasUnevenRows="True" Grid.Row="0" SeparatorVisibility="None">
       <ListView.ItemTemplate>
         <DataTemplate>
@@ -40,6 +40,6 @@
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>
-    </ListView>
+    </controls:CustomList>
   </Grid>
 </ContentPage>

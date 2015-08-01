@@ -40,6 +40,7 @@
     <Compile Include="Classes\BoolResources.cs" />
     <Compile Include="Classes\DoubleResources.cs" />
     <Compile Include="Classes\ImagePathResources.cs" />
+    <Compile Include="CustomControls\CustomList.cs" />
     <Compile Include="CustomControls\FoodyItem.xaml.cs">
       <DependentUpon>FoodyItem.xaml</DependentUpon>
     </Compile>
